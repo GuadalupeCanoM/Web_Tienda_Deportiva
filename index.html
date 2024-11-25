@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang ="es">
+
+    <!--CABECERA-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Olympia</title>
+        <!--Importo la fuente online: Merriweather-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+        
+        <link rel = "stylesheet" href = "css/style.css" >   
+        
+    </head>
+
+    <!--CUERPO-->
+    <body>
+
+        <!--ENCABEZADO-->
+        <header> 
+            <div class = "logo">
+                <a href="/index.html" >
+                    <img src="img/logo.png"  alt="logo de mi página web" class="logo-img">
+                </a>
+                <h1>Olympia</h1>
+            </div>   
+            <div class = "iconos">
+                <a href="#" >
+                    <img src="img/zona-privada.png"  alt="área de zona privada" class="privada-img">
+                </a>
+                <a href="#" >
+                    <img src="img/cesta-compra.png"  alt="cesta de la compra" class="compra-img">
+                </a>
+                <a href="#" >
+                    <img src="img/ayuda.png"  alt="ayuda" class="ayuda-img">
+                </a> 
+                <a href="#" >
+                    <img src="img/accesibilidad.png"  alt="accesibilidad" class="accesibilidad-img">
+                </a>
+            </div>         
+        </header>
+       
+        <!--ZONA DE NAVEGACIÓN-->
+        <nav class="menu-normal">
+            <a tabindex="0" href="https://www.iestrassierra.com/">Mujer</a>
+            <a tabindex="0" href="https://www.iestrassierra.com/">Hombre</a>
+            <a tabindex="0" href="https://www.iestrassierra.com/">Infantil</a>
+            <a tabindex="0" href="/superventas.html">Ventas</a> 
+ 
+        </nav>
+        <nav id="hamburguesa">
+            <input type="checkbox" id="menu">
+            <label for="menu"> ☰ </label>
+            <ul>
+                <a tabindex="0" href="https://www.iestrassierra.com/">Mujer</a>
+                <a tabindex="0" href="https://www.iestrassierra.com/">Hombre</a>
+                <a tabindex="0" href="https://www.iestrassierra.com/">Infantil</a>
+                <a tabindex="0" href="/superventas.html">Ventas</a> 
+            </ul>
+          </nav>
+                         
+        
+        <!--ZONA DE CONTENIDO-->
+            <main id ="contenido">
+
+                <!--SUBZONA 1: FAMILIA DE PRODUCTOS-->
+                <section class = "familia-productos">
+                    <h2>Categorías Principales</h2>
+                    
+                    <div class = "productos">
+                        <article class = "producto">
+                            <img src="img/zapatillas.png"  alt="zapatillas" class="producto-img">
+                            <div class ="texto-producto">
+                                <h2>Zapatillas</h2>
+                            </div>
+                        </article>  
+    
+                        <article class = "producto">
+                            <img src="img/fitness.png"  alt="fitness" class="producto-img">
+                            <div class ="texto-producto">
+                                <h2>Fitness</h2>
+                            </div>
+                        </article> 
+    
+                        <article class = "producto">
+                            <img src="img/futbol.png"  alt="futbol" class="producto-img">
+                            <div class ="texto-producto">
+                                <h2>Futbol</h2>
+                            </div>
+                        </article> 
+    
+                        <article class = "producto">
+                            <img src="img/ciclismo.png"  alt="ciclismo" class="producto-img">
+                            <div class ="texto-producto">
+                                <h2>Ciclismo</h2>
+                            </div>
+                        </article>
+    
+                        <article class = "producto">
+                            <img src="img/outdoor.png"  alt="outdoor" class="producto-img">
+                            <div class ="texto-producto">
+                                <h2>Outdoor</h2>
+                            </div>
+                        </article>
+    
+                        <article class = "producto">
+                            <img src="img/running.png"  alt="running" class="producto-img">
+                            <div class ="texto-producto">
+                                <h2>Running</h2>
+                            </div>
+                        </article>
+                    </div>
+       
+                </section>  
+
+                <!--SUBZONA 2: PRODUCTOS MÁS VENDIDOS-->
+                <section class="productos-mas-vendidos">
+                    <h2 class ="producto1">El producto más vendido de 2022...</h2>
+                    <!--Producto 1 más vendido-->
+                    <article class = "producto-top">
+                        <img class="producto-top-img" src="img/producto-top.png"  alt="producto-top" >
+                        <div class = "precio">
+                            <h2>39,99€</h2>
+                        </div>
+                        <h3 class = "texto-producto-top">1. Chandal deportivo mujer.</h3> 
+                    </article> 
+
+                    <!--Tabla de los 6 productos restantes más vendidos-->
+                    <article class="tabla">
+                        <h2>Tabla con los productos más vendidos</h2>
+                        <table>
+                            <thead>
+                                <tr>                                  
+                                    <th>Producto</th>
+                                    <th>Precio</th>
+                                    <th>Unidades Vendidas</th>
+                                </tr>
+                            </thead>
+                             
+                            <tbody>
+                                <tr>
+                                    <td>Sujetador deportivo</td>
+                                    <td>9,99€</td>
+                                    <td>10256</td>
+                                </tr>
+                                <tr>
+                                    <td>Camiseta running hombre</td>
+                                    <td>39,99€</td>
+                                    <td>9845</td>
+                                </tr>
+                                <tr>
+                                    <td>Forro polar</td>
+                                    <td>8,99€</td>
+                                    <td>7452</td>
+                                </tr>
+                                <tr> 
+                                    <td>Chandal mujer</td>
+                                    <td>49,99€</td>
+                                    <td>6232</td>
+                                </tr>
+                                <tr>
+                                    <td>Sudadera capucha</td>
+                                    <td>49,99€</td>
+                                    <td>5298</td>
+                                </tr>
+                                <tr>
+                                    <td>Guantes portero</td>
+                                    <td>24,99€</td>
+                                    <td>5003</td>
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+                    </article>
+                </section>
+
+                <!--Descripción de los 6 productos mencionados en la tabla-->
+                <section class ="productos-top7">
+                    <h2>Productos Top de este mes</h2>
+
+                    <div class = "productos-top">
+                        
+                        <article class = "producto-top7">
+                            <img src="img/top2.png"  alt="top2" class="producto-top2-img">
+                            <div class ="texto-producto7">
+                                <h3>2. Sujetador Deportivo</h3>
+                                <p>9,99€</p>
+                                <p>Hay disponibilidad</p>
+                            </div>
+                        </article> 
+                        <article class = "producto-top7">
+                            <img src="img/top3.png"  alt="top3" class="producto-top3-img">
+                            <div class ="texto-producto7">
+                                <h3>3. Camiseta running hombre</h3>
+                                <p>39,99€</p>
+                                <p>Hay disponibilidad</p>
+                            </div>
+                        </article> 
+                        <article class = "producto-top7">
+                            <img src="img/top4.png"  alt="top4" class="producto-top4-img">
+                            <div class ="texto-producto7">
+                                <h3>4. Forro polar</h3>
+                                <p>8,99€</p>
+                                <p>Hay disponibilidad</p>
+                            </div>
+                        </article> 
+                        <article class = "producto-top7">
+                            <img src="img/top5.png"  alt="top6" class="producto-top5-img">
+                            <div class ="texto-producto7">
+                                <h3>5. Chandal mujer</h3>
+                                <p>49,99€</p>
+                                <p>No hay disponibilidad</p>
+                            </div>
+                        </article> 
+                        <article class = "producto-top7">
+                            <img src="img/top6.png"  alt="top6" class="producto-top6-img">
+                            <div class ="texto-producto7">
+                                <h3>6. Sudadera capucha</h3>
+                                <p>49,99€</p>
+                                <p>Hay disponibilidad</p>
+                            </div>
+                        </article> 
+                        <article class = "producto-top7">
+                            <img src="img/top7.png"  alt="top8" class="producto-top7-img">
+                            <div class ="texto-producto7">
+                                <h3>7. Guantes portero hombre</h3>
+                                <p>24,99€</p>
+                                <p>No hay disponibilidad</p>
+                            </div>
+                        </article>    
+                    </div>
+                    
+                </section>
+
+                <section class = "informacion">
+                    
+                    <h2>Ropa biodegradable: una forma de reducir los efectos contaminantes de la moda</h2>
+                        <div class = "parrafos">
+                            <p>
+                                La ropa se está convirtiendo en un producto más de usar y tirar. ¿Por qué? En la actualidad, las cadenas de tiendas cambian el repertorio cada pocas semanas, 
+                                lo que genera un ciclo de producción constante que ocasiona importantes daños a la naturaleza debido, entre otras cosas, al uso constante de pesticidas y de tintes 
+                                contaminantes, al consumo excesivo de agua y energía, y a la emisión a la atmósfera de humos contaminantes durante el transporte. 
+                   
+                                ¿Consecuencias? En términos medioambientales, la industria textil es la responsable del 8% de las emisiones mundiales de CO2, causa al menos un 20% de la contaminación
+                                acuífera y provoca, indirectamente, la acumulación de ingentes cantidades de ropa en los vertederos, un tipo de desecho difícil de gestionar. 
+                                Un dato que lo ejemplifica: en la Unión Europea (UE) apenas se recicla el 25% de los más de 16 millones de toneladas de residuos textiles que se generan cada año.
+                                <br><br>
+                                Para nosotros es importante controlar todas las fases del proceso de producción de inicio a fin para que, cuando la prenda llegue a ti, cumpla con todos los estándares.
+                                Defendemos una moda ética, sostenible y con valores. Respetuosa con sus trabajadores y también con el planeta. No creemos en la dinámica de comprar, usar y tirar prendas, que lo único que genera son residuos
+                                a gran escala y desigualdades sociales en los países más pobres.
+                                <br><br>
+                                Por ello, desde <b>Olympia</b> a partir de ahora trabajaremos con proveedores que cumplan con el estándar de moda deportiva sostenible. 
+                            </p>   
+                        </div>
+                        
+                </section>  
+            </main>
+
+        <!--Pie de página-->
+        <footer>
+            <!--apartados en lista-->
+            <ul class="aboutme">
+                <li><a href="#">Aviso Legal</a></li>
+                <li><a href="#">Política de cookies</a></li>
+                <li><a href="#">Condiciones generales</a></li>
+                <li><a href="#">Protección de datos</a></li>
+            </ul> 
+        
+            <div class ="pie">
+                <!-- Información de contacto -->
+                <p>&copy; Guadalupe Cano</p>
+	            <p>Avenida Viñuela, 2 - 14014, Córdoba </p>
+	            <p><a href="mailto:direccion@correo.com" class="correo">direccion@correo.com</a></p>
+	            <p><a href="tel:+34999999999" class="telefono">999 999 999</a></p> 
+            </div>
+        </footer>
+    </body>
+</html>
+   

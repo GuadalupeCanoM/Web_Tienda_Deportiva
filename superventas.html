@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang ="es">
+
+    <!--CABECERA-->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Olympia</title>
+        <!--Importo la fuente online: Merriweather-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+        
+        <link rel = "stylesheet" href = "css/superventas.css" >   
+        
+    </head>
+
+    <!--CUERPO-->
+    <body>
+
+        <!--ENCABEZADO-->
+        <header> 
+            <div class = "logo">
+                <a href="/index.html" >
+                    <img src="img/logo.png"  alt="logo de mi página web" class="logo-img">
+                </a>
+                <h1>Olympia</h1>
+            </div>   
+            <div class = "iconos">
+                <a href="#" >
+                    <img src="img/zona-privada.png"  alt="área de zona privada" class="privada-img">
+                </a>
+                <a href="#" >
+                    <img src="img/cesta-compra.png"  alt="cesta de la compra" class="compra-img">
+                </a>
+                <a href="#" >
+                    <img src="img/ayuda.png"  alt="ayuda" class="ayuda-img">
+                </a> 
+                <a href="#" >
+                    <img src="img/accesibilidad.png"  alt="accesibilidad" class="accesibilidad-img">
+                </a>
+            </div>         
+        </header>
+       
+        <!--ZONA DE NAVEGACIÓN-->
+        <!--Menú normal-->
+        <nav class="menu-normal">
+            <a tabindex="0" href="https://www.iestrassierra.com/">Mujer</a>
+            <a tabindex="0" href="https://www.iestrassierra.com/">Hombre</a>
+            <a tabindex="0" href="https://www.iestrassierra.com/">Infantil</a>
+            <a tabindex="0" href="/superventas.html">Ventas</a>       
+ 
+        </nav>
+        <!--Menú hamburguesa-->
+        <nav id="hamburguesa">
+            <input type="checkbox" >
+            <label for="menu" id="menu" title="menu"> ☰ </label >
+            <ul>
+                <a tabindex="0" href="https://www.iestrassierra.com/">Mujer</a>
+                <a tabindex="0" href="https://www.iestrassierra.com/">Hombre</a>
+                <a tabindex="0" href="https://www.iestrassierra.com/">Infantil</a>
+                <a tabindex="0" href="/superventas.html">Ventas</a> 
+            </ul>
+          </nav>
+                         
+        
+        <!--ZONA DE CONTENIDO-->
+            <main id ="contenido">
+
+            <!--ZONA 1: PRODUCTOS MÁS VENDIDOS-->
+                
+            <section class="productos-mas-vendidos">
+                
+                    <!--Producto 1 más vendido-->
+                    <article class = "producto-top">
+                        <h2 class ="producto1">El producto más vendido de 2022...</h2>
+                        <img class="producto-top-img" src="img/producto-top.png"  alt="producto-top" >
+                        <div class = "precio">
+                            <h2>39,99€</h2>
+                        </div>
+                        <h3 class = "texto-producto-top">1. Chandal deportivo mujer.</h3> 
+                    </article> 
+
+                    <!--Tabla de los 6 productos restantes más vendidos-->
+                
+                    <article class="tabla">
+                        
+                        <table>
+                            <caption>TOP 5</caption>
+                            <thead>
+                                <tr>                                  
+                                    <th id="producto">Producto</th>
+                                    <th id="precio">Precio</th>
+                                    <th id="unidades vendidas">Unidades Vendidas</th>
+                                </tr>
+                            </thead>
+                             
+                            <tbody>
+                                <tr>
+                                    <td headers="producto">1. Chandal deportivo Mujer</td>
+                                    <td headers="precio">39,99€</td>
+                                    <td headers="unidades vendidas">13.250</td>
+                                </tr>
+                                <tr>
+                                    <td headers="producto">2. Sujetador deportivo</td>
+                                    <td headers="precio">9,99€</td>
+                                    <td headers="unidades vendidas">10.256</td>
+                                </tr>
+                                <tr>
+                                    <td headers="producto">3. Camiseta running hombre</td>
+                                    <td headers="precio">39,99€</td>
+                                    <td headers="unidades vendidas">9.845</td>
+                                </tr>
+                                <tr>
+                                    <td headers="producto">4. Forro polar</td>
+                                    <td headers="precio">8,99€</td>
+                                    <td headers="unidades vendidas">7.452</td>
+                                </tr>
+                                <tr> 
+                                    <td headers="producto">5. Chandal mujer</td>
+                                    <td headers="precio">49,99€</td>
+                                    <td headers="unidades vendidas">6.232</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" headers="producto">Total Unidades</td>
+                                    <td headers="unidades vendidas">47.035</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </article>
+                </section>
+
+                <!--ZONA 2: SUSCRIBIRSE A NOVEDADES - FORMULARIO-->    
+                <section class="formulario">
+                    <h2> ¡Suscríbete a nuestras novedades!</h2>
+                    <form  action="" autocomplete="on" validate>
+                        <!--DATOS PERSONALES-->
+                        <fieldset class="datos-personales">
+                            <legend>Formulario</legend>
+                            <h2>Datos personales</h2>
+
+                            <!--Máximo 20 caracteres. Obligatorio-->
+                            <label for="nombre" title="nombre">Nombre: (Obligatorio)</label>
+                            <input type="text" id="nombre" name="nombre" minlength="3" maxlength="20" placeholder="Nombre" title="Introduzca su nombre máximo 20 caracteres" tabindex="1" required>
+                           
+                           
+                            <!--Máximo 30 caracteres. Obligatorio-->
+                            <label for="apellidos" title="Apellidos" >Apellidos: (Obligatorio)</label>
+                            <input type="text" id="Apellidos" name="apellidos" minlength=3 maxlength=30 placeholder="Apellidos" title="Introduzca sus apellidos máximo 20 caracteres" tabindex="2" required>
+                           
+                            
+                            <!--Maximo 20 caracteres. Obligatorio-->
+                            <label for="correo" title="Correo">Correo Electrónico: (Obligatorio)</label>
+                            <input type="email" id="correo"  name="correo" minlength=3 maxlength=30 placeholder="ejemplo@correo.com" title="Introduzca su correo electrónico" tabindex="3" 
+                            required>          
+                           
+                            <!--9 caracteres, numerico, debe empezar por 6,7,8 o 9-->
+                            <label for="teléfono" title="Teléfono">Teléfono: </label>
+                            <input type="number" id="teléfono" name="telefono" required pattern="[6,8,7,9]{1}[0-9]{8}" placeholder="600000000" title="Introduzca su telédono" tabindex="4" >
+                           
+                            <!--Obligatorio-->
+                            <label for="fecha" title="Fecha de nacimiento">Fecha de nacimiento: (Obligatorio)</label>
+                            <input type="date" id="fecha" name="fecha" value="2018-07-22" min="1930-01-01" max="2018-01-01" title="Introduzca su fecha de nacimiento"tabindex="5" required>
+                            
+                            <!--CATEGORÍAS-->
+                            <h2>Categorías que desea recibir información</h2>
+                                <!-- Lista de selección múltiple -->
+                                <select id = "categorias" name="combo" multiple>
+                                  
+                                  <optgroup label="Hombre">
+                                    <option value="1" label="Ropa"> </option>
+                                    <option value="2" label="Calzado"> </option>
+                                    <option value="3" label="Accesorios"> </option>
+                                    <option value="4" label="Baño"> </option>
+                                  </optgroup>
+                              
+                                  <optgroup label="Mujer">
+                                    <option value="1" label="Ropa"> </option>
+                                    <option value="2" label="Calzado"> </option>
+                                    <option value="3" label="Accesorios"> </option>
+                                    <option value="4" label="Baño"> </option>
+                                  </optgroup>
+
+                                  <optgroup label="Niños">
+                                    <option value="1" label="Ropa"> </option>
+                                    <option value="2" label="Calzado"> </option>
+                                    <option value="3" label="Accesorios"> </option>
+                                    <option value="4" label="Baño"> </option>
+                                  </optgroup>
+                                </select>
+                                <p>Pulsa la tecla ctrl para seleccionar varias categorías</p>
+
+                                <!--PROTECCIÓN DE DATOS-->
+                                <h2 class="protecion-datos"></span>Condiciones de suscripción</h2>
+                                <textarea class="datos-proteccion" disabled readonly>Olympia es el Responsable del tratamiento de los datos personales del Usuario y le informa que estos datos serán tratados de conformidad con lo dispuesto en el Reglamento (UE) 2016/679 de 27 de abril de 2016 (GDPR), por lo que se le facilita la siguiente información del tratamiento: Fin del tratamiento: mantener una relación comercial y el envío de comunicaciones sobre nuestros productos y servicios. Criterios de conservación de los datos: se conservarán mientras exista un interés mutuo para mantener el fin del tratamiento y cuando ya no sea necesario para tal fin, se suprimirán con medidas de seguridad adecuadas para garantizar la seudonimización de los datos o la destrucción total de los mismos. Comunicación de los datos: No se comunicarán los datos a terceros, salvo obligación legal.</textarea>
+                               
+                                <!--OPCION SI Y NO-->
+                                <div class="si-no">
+                                    <label for="si" title="si">Sí</label>
+                                    <input type="radio" id="si" name="condiciones de suscripcion" value="yes" checked>
+                                    <label for="no" title="no">No</label>
+                                    <input type="radio" id="no" name="condiciones de suscripcion" value="no">
+                                    
+                                </div>
+      
+                                <!--BOTONES ENVIAR Y CANCELAR-->
+                                <div class="botones">
+                                    <button class="boton enviar" type="submit">Enviar</button>
+                                    <button class="boton inicializar" type="reset">Cancelar</button>
+                                </div>
+                        </fieldset>
+                    </form>
+                </section>
+
+                
+
+        <!--Pie de página-->
+        <footer>
+            <!--apartados en lista-->
+            <ul class="aboutme">
+                <li><a href="#">Aviso Legal</a></li>
+                <li><a href="#">Política de cookies</a></li>
+                <li><a href="#">Condiciones generales</a></li>
+                <li><a href="#">Protección de datos</a></li>
+            </ul> 
+        
+            <div class ="pie">
+                <!-- Información de contacto -->
+                <p>&copy; Guadalupe Cano</p>
+	            <p>Avenida Viñuela, 2 - 14014, Córdoba </p>
+	            <p><a href="mailto:direccion@correo.com" class="correo">direccion@correo.com</a></p>
+	            <p><a href="tel:+34999999999" class="telefono">999 999 999</a></p> 
+            </div>
+        </footer>
+    </body>
+</html>
+   

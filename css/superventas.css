@@ -1,0 +1,641 @@
+
+
+/*Importo la fuente local*/
+@font-face {
+    font-family: "amatic";
+    src:local("amatic"), url("../Fonts/Amatic/AmaticSC-Bold.ttf");
+}
+
+
+
+/*Variables creadas para los tres colores que voy a usar*/
+:root{
+    --color-azul: #4d94fa;
+    --color-salmon: #F0AB89;
+    --color-amarillo: #e9f089;
+
+
+}
+
+
+/*-------------------------------------------------------------------------------*/
+
+/*ENCABEZADO*/
+header{
+    display: flex;
+    height: 70px;
+    background-color: var(--color-azul);
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.logo{
+    display: flex;
+    padding-left: 10px;
+    align-items: center;
+    margin-right: 10px;
+
+}
+
+.logo-img{
+    width: 150px;
+}
+
+.logo > h1{
+    font-family: "amatic", sans-serif;
+    text-transform: uppercase;
+    font-size: 70px;
+    letter-spacing: 10px;
+    color: white;
+    text-shadow: 1px 1px 10px black; /*Uso una sombra para el nombre de mi página web*/
+}
+
+.iconos{
+    display: flex;
+    flex-wrap:wrap;
+
+}
+
+
+.iconos img{
+    padding-right: 15px;
+    width: 30px;
+}
+
+/*---------------------------------------------------------------------------------*/
+
+/*ZONA DE NAVEGACIÓN*/
+
+.menu-normal{
+    display: grid;
+    background-color: var(--color-salmon);
+    padding: 10px;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+
+#hamburguesa{
+    display: none;
+}
+
+/*items de navegación*/
+.menu-normal a{
+    font-family: "Merriweather";
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.menu-normal a:hover{
+    text-decoration:underline;
+    font-size: 20px;
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+/*ZONA DE CONTENIDO*/
+
+/*Contenido general*/
+#contenido{
+    background-color:white;
+    
+
+}
+
+/*-------------------------*/
+
+/*ZONA 1: PRODUCTOS MÁS VENDIDOS*/
+.productos-mas-vendidos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: aliceblue;
+    
+}
+
+/*PRODUCTO 1 MÁS VENDIDO*/
+.producto-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+/*Efectos para el precio*/
+.precio{
+    width: 0;
+    height: 30%;
+    background-color: rgba(56, 53, 53, 0.568);
+    border-radius: 20px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: .4s all;
+    
+}
+
+.precio h2{
+    color:aliceblue;
+    text-shadow: 1px 1px black;
+    
+}
+
+.producto-top:hover .precio{
+    width: 80px;
+    height: 50px;;
+    
+}
+
+.producto1{
+    font-size: 40px;
+    font-family: "amatic";
+    justify-self: center;
+
+}
+
+.producto-top-img{
+    border-radius: 20px;
+    box-shadow: 8px 8px 12px black;
+    width: 500px;
+  
+}
+
+
+.texto-producto-top{
+    display: grid;
+    font-size: 20px;
+    font-family: "Merriweather";
+
+}
+
+.texto-producto-top h3, p{
+    justify-self: center;
+}
+
+
+/*----*/
+
+/*TABLA con el ranking los 6 productos más vendidos*/
+.tabla{
+    display: grid;
+    justify-content: center;
+    color:black;
+    font-size: 20px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-left: 20px;
+
+}
+
+
+caption{
+    font-family: "Merriweather";
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+
+}
+
+table{
+    border: solid 2px black;
+
+}
+
+thead{
+    background: var(--color-amarillo);
+
+}
+
+th{
+    padding: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Merriweather";
+}
+
+td{
+    text-align: center;
+    padding:10px;
+    width: 50px;
+    border-bottom: solid 2px black;
+}
+
+tbody tr{
+    cursor:pointer;
+}
+
+tbody tr:hover{
+    background: #f9ffe4;
+
+}
+.producto-top2{
+    width: 100px;
+
+}
+
+
+/*-------------------------------------------------------------------------------------*/
+
+/*ZONA 2: SUSCRIBIRSE A NOVEDADES - FORMULARIO*/
+
+.formulario{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+    background-color:var(--color-amarillo);
+}
+
+.formulario > h2{
+    margin-top: 100px;
+    text-align: center;
+    font-family: "amatic";
+    font-size: 40px;
+    
+    
+}
+
+.datos-personales{
+    display: grid;
+    background-color: #4d94fa;
+    justify-content: center;
+    width: 400px;
+    margin-bottom: 100px;
+    font-family: "Merriweather";
+}
+
+.datos-personales > h2{
+    text-align: center;
+}
+
+#categorias{
+    justify-self: center;
+    width: 150px;
+    height: 300px;
+}
+
+p{
+    text-align: center;
+}
+
+/*PROTECCIÓN DE DATOS*/
+.datos-proteccion{
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+/*BOTÓN SI NO*/
+.si-no{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+/*BOTONES ENVIAR Y CANCELAR*/
+.botones{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+
+ /* Cuando el campo es inválido se pone un borde rojo */
+ input:invalid {
+    border: solid 2px red;
+}
+
+
+/* Cuando el campo es válido se pone un borde verde */
+input:valid {
+    border: solid 2px green;
+}
+
+.boton{
+    color: black;
+    border: 2px solid #0009ba;
+    margin:10px;
+    text-align: center;
+}
+
+.enviar{
+    background-color: #52BE80;
+}
+.inicializar{
+    background-color: #E74C3C;
+}
+
+.boton:hover{
+    color: white;
+    font-weight: 800;
+    border: 2px solid #0009ba;
+
+}
+
+
+
+/*---------------------------------------------------------------------------*/
+/*PIE DE PÁGINA*/
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+    background-image: url(/img/footer.png); /*Imagen para el footer*/
+    background-size: cover;
+  
+
+}
+
+.aboutme{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    font-family: "Merriweather";
+    list-style-type: none; /*le quitamos la viñeta a la lista*/
+    
+
+}
+
+/*Efecto que al pasar por encima de los apartados el color cambia y se subraya*/
+.aboutme a:hover{
+    text-decoration:underline;
+    color:var(--color-salmon);
+}
+
+.aboutme a{
+    font-size: 12px;
+    text-decoration: none;
+    
+}
+
+
+/*Información personal*/
+
+.pie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: "Merriweather";
+
+}
+
+.pie p{
+    font-size: 15px;
+}
+
+/*-------------------------------------------------------------*/
+/*Media Query para dispositivos con menos de 768px*/
+/*-------------------------------------------------------------*/
+
+@media(max-width: 768px){
+
+    /*ENCABEZADO*/
+
+    .iconos{
+        display: grid;
+        grid-template-columns: auto auto; /*iconos en dos filas*/
+
+    }
+
+    .logo > h1{
+        font-size: 0px; /*El logo desaparece*/
+
+    }
+
+    /*MENÚ*/
+
+    ul{
+        display: none;
+      }
+
+    #menu:checked  ~ ul{
+        display:block;
+      }
+    
+    #menu {
+        display: none;
+      }
+
+    #label {
+        box-sizing: border-box;
+        display: inline-block;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        text-align: center;
+        
+      }
+      
+    #hamburguesa a {
+        display: block;
+        background: var(--color-salmon);
+        margin: 0;
+        padding: 10px;
+        list-style: none;
+        border-bottom: 2px dotted black;
+        text-align: center;
+        font-family: "Merriweather";
+        text-decoration: none;
+        color: black;
+      }
+      
+    #hamburguesa a:hover{
+        text-decoration:underline;
+        font-size: 20px;
+        color: var(--color-azul);
+    
+    }
+
+    .menu-normal{
+        display: none;
+      }
+
+    #hamburguesa{
+        display: block;
+        background-color: var(--color-salmon);
+        padding: 15px;
+        
+      }
+
+
+
+    /*ZONA CONTENIDO*/
+
+    /*PRODUCTOS MÁS VENDIDOS*/
+
+    /*SUBZONA 1: producto 1 más vendido*/
+
+    .productos-mas-vendidos{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: aliceblue;
+        
+    }
+
+    .producto-top-img{
+        width: 300px; /*Pongo la imagen del producto 1 más pequeña para que se adapte a la ventana*/
+      
+    }
+
+    .producto1{
+        text-align: center;
+        font-size: 25px;
+    }
+
+
+    .producto-top:hover .precio{
+        width: 80px;
+        height: 50px;
+        
+    }
+
+    /*Tabla: Debajo del producto más vendido*/
+    .tabla{
+        display: grid;
+        justify-content: center;
+        color:black;
+        font-size: 20px;
+        table-layout: fixed;
+        border-collapse: collapse;
+        width:400px;
+        overflow:scroll; /*Scroll horizontal para la tabla*/
+        margin-bottom: 30px;
+    
+    }
+
+
+    table {
+    background-color:lightgray;
+
+    }
+    
+    .tabla h2{
+        font-family: "Merriweather";
+        font-size: 20px;
+        text-align: center;
+    
+    }
+    
+    table{
+        border: solid 2px black;
+    
+    }
+    
+    thead{
+        background: var(--color-amarillo);
+    
+    }
+    
+    th{
+        padding: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: "Merriweather";
+    }
+    
+    td{
+        text-align: center;
+        padding:10px;
+        width: 50px;
+        border-bottom: solid 2px black;
+    }
+    
+    tbody tr{
+        cursor:pointer;
+    }
+    
+    tbody tr:hover{
+        background: var(--color-azul);
+    
+    }
+    .producto-top2{
+        width: 100px;
+    
+    }
+
+    /*Subzona 2: solo aparecen dos productos*/
+  
+
+    /*Quitamos todos los productos*/
+    .producto-top7{
+        display: none;
+
+    }
+    
+    .productos-top{
+        display: grid;
+        grid-template-columns: auto; /*Ponemos los productos en una columna*/
+    }
+
+
+
+    /*Pongo los productos que quiero que aparezcan, en este caso el 2 y el 3*/
+    .producto-top7:nth-child(-n+2){ /*-n +2 representa los dos primeros elementos entre un grupo de hermanos*/
+        display: grid;
+        margin: 10px;
+
+    }
+
+
+    /*ZONA INFORMATIVA*/
+
+    /*Titulo más pequeño*/
+    .titulo h1{
+        font-size: 25px;
+
+    }
+
+    /*Párafos en una fila*/
+   
+
+    /*Pongo el texto del párrafo un poco más pequeño */
+    .parrafos p{
+        font-size: 20px;
+        column-count: 1;
+        column-fill: balance; /*Aplicamos tres columnas tal y como se indica en la tarea*/
+        column-gap: 50px;
+
+
+    }
+
+    /*FOOTER*/
+    /*En la tarea no pone que tengamos que modificar el footer, pero me resulta más visual si 
+    si quito el primer apartado y solo dejo la información de contacto en una columna*/
+    .aboutme{
+        display: none;
+    }
+
+    .pie{
+        display: flex;
+        flex-direction: column;
+       
+        align-content: center;
+        
+    }
+   
+    .pie p{
+        font-size: 15px;
+        
+ 
+    }
+
+
+}
